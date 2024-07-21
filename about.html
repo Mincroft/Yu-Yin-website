@@ -3,31 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me - {{Your Name}}</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="js/scripts.js" defer></script>
+    <title>关于我</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>About Me</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="contact.html">Contact</a></li>
+    <!-- 导航栏 -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">个人介绍</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">主页</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="about.html">关于我</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="portfolio.html">作品集</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">联系</a>
+                </li>
             </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="about">
-            <h2>About {{Your Name}}</h2>
-            <p>{{Your Detailed Introduction}}</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 {{Your Name}}. All rights reserved.</p>
-    </footer>
+        </div>
+    </nav>
+
+    <!-- 主体内容 -->
+    <div class="container mt-5">
+        <h1 class="text-center animate__animated animate__fadeIn">关于我</h1>
+        <p class="text-center" data-aos="fade-up">这里是关于我的内容...</p>
+    </div>
+
+    <!-- 脚本 -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
